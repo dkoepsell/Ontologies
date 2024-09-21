@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/ontology/Use">
+    <rdf:type rdf:resource="http://example.org/ontology/Occurrent"/>
+    <rdfs:label>Use</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Brain">
+    <rdf:type rdf:resource="http://example.org/ontology/IndependentContinuant"/>
+    <rdfs:label>Brain</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Disposition">
+    <rdf:type rdf:resource="http://example.org/ontology/DependentContinuant"/>
+    <rdfs:label>Disposition</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Relation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Relation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/DependentContinuant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Dependent Continuant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/DigitalObject">
+    <rdf:type rdf:resource="http://example.org/ontology/IndependentContinuant"/>
+    <rdfs:label>DigitalObject</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/IntentionalArtifact">
+    <rdf:type rdf:resource="http://example.org/ontology/IndependentContinuant"/>
+    <rdfs:label>IntentionalArtifact</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Participation">
+    <rdf:type rdf:resource="http://example.org/ontology/Relation"/>
+    <rdfs:label>Participation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Cyberspace">
+    <rdf:type rdf:resource="http://example.org/ontology/IndependentContinuant"/>
+    <rdfs:label>Cyberspace</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Creation">
+    <rdf:type rdf:resource="http://example.org/ontology/Occurrent"/>
+    <rdfs:label>Creation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Event">
+    <rdf:type rdf:resource="http://example.org/ontology/Occurrent"/>
+    <rdfs:label>Event</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/BiologicalSystem">
+    <rdf:type rdf:resource="http://example.org/ontology/IndependentContinuant"/>
+    <rdfs:label>BiologicalSystem</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Realization">
+    <rdf:type rdf:resource="http://example.org/ontology/DependentContinuant"/>
+    <rdfs:label>Realization</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Transfer">
+    <rdf:type rdf:resource="http://example.org/ontology/Occurrent"/>
+    <rdfs:label>Transfer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Dependence">
+    <rdf:type rdf:resource="http://example.org/ontology/Relation"/>
+    <rdfs:label>Dependence</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Causation">
+    <rdf:type rdf:resource="http://example.org/ontology/Relation"/>
+    <rdfs:label>Causation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Occurrent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Occurrent</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Agent">
+    <rdf:type rdf:resource="http://example.org/ontology/IndependentContinuant"/>
+    <rdfs:label>Agent</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Process">
+    <rdf:type rdf:resource="http://example.org/ontology/Occurrent"/>
+    <rdfs:label>Process</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/IndependentContinuant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Independent Continuant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/MaterialObject">
+    <rdf:type rdf:resource="http://example.org/ontology/IndependentContinuant"/>
+    <rdfs:label>MaterialObject</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/SpatialRegion">
+    <rdf:type rdf:resource="http://example.org/ontology/IndependentContinuant"/>
+    <rdfs:label>SpatialRegion</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Quality">
+    <rdf:type rdf:resource="http://example.org/ontology/DependentContinuant"/>
+    <rdfs:label>Quality</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Subclass">
+    <rdf:type rdf:resource="http://example.org/ontology/Relation"/>
+    <rdfs:label>Subclass</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Role">
+    <rdf:type rdf:resource="http://example.org/ontology/DependentContinuant"/>
+    <rdfs:label>Role</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Function">
+    <rdf:type rdf:resource="http://example.org/ontology/DependentContinuant"/>
+    <rdfs:label>Function</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Derivation">
+    <rdf:type rdf:resource="http://example.org/ontology/Relation"/>
+    <rdfs:label>Derivation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/IntentionalityQuality">
+    <rdf:type rdf:resource="http://example.org/ontology/DependentContinuant"/>
+    <rdfs:label>IntentionalityQuality</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>
