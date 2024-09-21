@@ -1,2 +1,2 @@
 # Ontologies
-OWL BFO ontology
+OWL BFO ontologies
