@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+]>
+
+<rdf:RDF xmlns="http://www.example.org/ontology#"
+     xml:base="http://www.example.org/ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+    <owl:Ontology rdf:about="http://www.example.org/ontology"/>
+
+    <!-- Classes -->
+    <owl:Class rdf:about="http://www.example.org/ontology#Contract"/>
+    <owl:Class rdf:about="http://www.example.org/ontology#Party"/>
+    <owl:Class rdf:about="http://www.example.org/ontology#Clause"/>
+    <owl:Class rdf:about="http://www.example.org/ontology#Obligation"/>
+    <owl:Class rdf:about="http://www.example.org/ontology#Right"/>
+    <owl:Class rdf:about="http://www.example.org/ontology#Consideration"/>
+    <owl:Class rdf:about="http://www.example.org/ontology#MeetingOfTheMinds"/>
+    <owl:Class rdf:about="http://www.example.org/ontology#ContractFormation"/>
+    <owl:Class rdf:about="http://www.example.org/ontology#Performance"/>
+    <owl:Class rdf:about="http://www.example.org/ontology#Breach"/>
+    <owl:Class rdf:about="http://www.example.org/ontology#DisputeResolution"/>
+
+    <!-- Object Properties -->
+    <owl:ObjectProperty rdf:about="http://www.example.org/ontology#hasPart">
+        <rdfs:domain rdf:resource="http://www.example.org/ontology#Contract"/>
+        <rdfs:range rdf:resource="http://www.example.org/ontology#Clause"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/ontology#involves">
+        <rdfs:domain rdf:resource="http://www.example.org/ontology#Contract"/>
+        <rdfs:range rdf:resource="http://www.example.org/ontology#Party"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/ontology#specifies">
+        <rdfs:domain rdf:resource="http://www.example.org/ontology#Clause"/>
+        <rdfs:range rdf:resource="http://www.example.org/ontology#Obligation"/>
+        <rdfs:range rdf:resource="http://www.example.org/ontology#Right"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/ontology#requires">
+        <rdfs:domain rdf:resource="http://www.example.org/ontology#Contract"/>
+        <rdfs:range rdf:resource="http://www.example.org/ontology#MeetingOfTheMinds"/>
+        <rdfs:range rdf:resource="http://www.example.org/ontology#Consideration"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/ontology#resultsIn">
+        <rdfs:domain rdf:resource="http://www.example.org/ontology#Breach"/>
+        <rdfs:range rdf:resource="http://www.example.org/ontology#DisputeResolution"/>
+    </owl:ObjectProperty>
+</rdf:RDF>
