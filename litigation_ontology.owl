@@ -1,0 +1,68 @@
+
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:bfo="http://purl.obolibrary.org/obo/BFO_"
+         xmlns:lit="http://example.org/litigation#">
+         
+    <owl:Ontology rdf:about="http://example.org/litigation"/>
+
+    <!-- Classes -->
+    <owl:Class rdf:about="lit:Person">
+        <rdfs:subClassOf rdf:resource="bfo:BFO_0000040"/> <!-- Independent Continuant -->
+    </owl:Class>
+
+    <owl:Class rdf:about="lit:Organization">
+        <rdfs:subClassOf rdf:resource="bfo:BFO_0000040"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="lit:LegalRole">
+        <rdfs:subClassOf rdf:resource="bfo:BFO_0000023"/> <!-- Specifically Dependent Continuant -->
+    </owl:Class>
+
+    <owl:Class rdf:about="lit:LegalDocument">
+        <rdfs:subClassOf rdf:resource="bfo:BFO_0000034"/> <!-- Generically Dependent Continuant -->
+    </owl:Class>
+
+    <owl:Class rdf:about="lit:Evidence">
+        <rdfs:subClassOf rdf:resource="bfo:BFO_0000040"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="lit:Process">
+        <rdfs:subClassOf rdf:resource="bfo:BFO_0000015"/>
+    </owl:Class>
+
+    <!-- Processes -->
+    <owl:Class rdf:about="lit:FilingComplaint">
+        <rdfs:subClassOf rdf:resource="lit:Process"/>
+    </owl:Class>
+    <owl:Class rdf:about="lit:DiscoveryProcess">
+        <rdfs:subClassOf rdf:resource="lit:Process"/>
+    </owl:Class>
+    <owl:Class rdf:about="lit:Trial">
+        <rdfs:subClassOf rdf:resource="lit:Process"/>
+    </owl:Class>
+
+    <!-- Properties -->
+    <owl:ObjectProperty rdf:about="lit:hasRole">
+        <rdfs:domain rdf:resource="lit:Person"/>
+        <rdfs:range rdf:resource="lit:LegalRole"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="lit:createsDocument">
+        <rdfs:domain rdf:resource="lit:Person"/>
+        <rdfs:range rdf:resource="lit:LegalDocument"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="lit:providesEvidence">
+        <rdfs:domain rdf:resource="lit:Person"/>
+        <rdfs:range rdf:resource="lit:Evidence"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="lit:initiates">
+        <rdfs:domain rdf:resource="lit:LegalDocument"/>
+        <rdfs:range rdf:resource="lit:FilingComplaint"/>
+    </owl:ObjectProperty>
+
+</rdf:RDF>
