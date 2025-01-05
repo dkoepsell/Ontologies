@@ -1,0 +1,135 @@
+@prefix : <http://example.org/democracy#> .
+@prefix bfo: <http://example.org/bfo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+################################################################################
+# Ontology Declaration
+################################################################################
+
+:DemocracyOntology rdf:type owl:Ontology .
+
+################################################################################
+# BFO Classes (Placeholder)
+################################################################################
+
+# Depending on your actual BFO import strategy, you'd typically import official BFO IRIs.
+bfo:IndependentContinuant rdf:type owl:Class .
+bfo:GenericallyDependentContinuant rdf:type owl:Class .
+bfo:SpecificallyDependentContinuant rdf:type owl:Class .
+bfo:Process rdf:type owl:Class .
+
+################################################################################
+# Domain Classes
+################################################################################
+
+:Institution rdf:type owl:Class ;
+    rdfs:subClassOf bfo:IndependentContinuant ;
+    rdfs:label "Institution" ;
+    rdfs:comment "A social entity constituted by norms, roles, and defined functions in society." .
+
+:DemocraticInstitution rdf:type owl:Class ;
+    rdfs:subClassOf :Institution ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasRole ;
+          owl:someValuesFrom :DemocraticMandate
+        ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :isConstrainedBy ;
+          owl:someValuesFrom :Constitution
+        ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :participatesIn ;
+          owl:someValuesFrom :AccountabilityProcess
+        ] ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :isAccountableTo ;
+          owl:someValuesFrom :Citizen
+        ] ;
+    rdfs:label "Democratic Institution" ;
+    rdfs:comment "An institution fulfilling core democratic requirements (representation, accountability, etc.)." .
+
+:Constitution rdf:type owl:Class ;
+    rdfs:subClassOf bfo:GenericallyDependentContinuant ;
+    rdfs:label "Constitution" ;
+    rdfs:comment "Foundational legal document that defines the structure and limits of government." .
+
+:Mandate rdf:type owl:Class ;
+    rdfs:subClassOf bfo:SpecificallyDependentContinuant ;
+    rdfs:label "Mandate" ;
+    rdfs:comment "Authority granted to an office holder, typically via an institutional process." .
+
+:DemocraticMandate rdf:type owl:Class ;
+    rdfs:subClassOf :Mandate ;
+    rdfs:label "Democratic Mandate" ;
+    rdfs:comment "A subtype of mandate specifically conferred by democratic procedures." .
+
+:Citizen rdf:type owl:Class ;
+    rdfs:subClassOf bfo:IndependentContinuant ;
+    rdfs:label "Citizen" ;
+    rdfs:comment "An individual recognized as a member of the polity with rights and responsibilities." .
+
+################################################################################
+# Process Classes
+################################################################################
+
+:ElectoralProcess rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    rdfs:label "Electoral Process" ;
+    rdfs:comment "Process in which public offices are filled via voting." .
+
+:LegislativeProcess rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    rdfs:label "Legislative Process" ;
+    rdfs:comment "Process by which bills are drafted, debated, and enacted into law." .
+
+:AccountabilityProcess rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    rdfs:label "Accountability Process" ;
+    rdfs:comment "Process through which institutions are monitored and held accountable." .
+
+:PublicConsultationProcess rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    rdfs:label "Public Consultation Process" ;
+    rdfs:comment "Process where the public provides input to decision-making (hearings, referendums, etc.)." .
+
+:PolicyMakingProcess rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    rdfs:label "Policy-Making Process" ;
+    rdfs:comment "Process by which policy is identified, formulated, and implemented." .
+
+################################################################################
+# Object Properties
+################################################################################
+
+:hasRole rdf:type owl:ObjectProperty ;
+    rdfs:domain bfo:IndependentContinuant ;
+    rdfs:range :Mandate ;
+    rdfs:label "hasRole" ;
+    rdfs:comment "Links an institution or person to the role/mandate they hold." .
+
+:isConstrainedBy rdf:type owl:ObjectProperty ;
+    rdfs:domain :DemocraticInstitution ;
+    rdfs:range :Constitution ;
+    rdfs:label "isConstrainedBy" ;
+    rdfs:comment "Indicates that a democratic institution is bound by a constitution or legal framework." .
+
+:isAccountableTo rdf:type owl:ObjectProperty ;
+    rdfs:domain :DemocraticInstitution ;
+    rdfs:range :Citizen ;
+    rdfs:label "isAccountableTo" ;
+    rdfs:comment "Links a democratic institution to the citizens/constituents to whom it is accountable." .
+
+:participatesIn rdf:type owl:ObjectProperty ;
+    rdfs:domain bfo:IndependentContinuant ;
+    rdfs:range bfo:Process ;
+    rdfs:label "participatesIn" ;
+    rdfs:comment "Indicates that an entity (institution, person) is a participant in a specific process." .
+
+:overseesProcess rdf:type owl:ObjectProperty ;
+    rdfs:domain :DemocraticInstitution ;
+    rdfs:range bfo:Process ;
+    rdfs:label "overseesProcess" ;
+    rdfs:comment "Specifies that a democratic institution oversees or manages a certain process (e.g., Electoral Commission -> ElectoralProcess)." .
