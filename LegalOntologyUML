@@ -1,0 +1,94 @@
+@startuml
+title BFO-Based Ontology of Legal Facts
+
+package "Reality" {
+    class RealWorld {
+        note right: Brute facts,\nindependent of institutions
+    }
+    class SocialReality {
+        note right: Facts constructed by\nsocial actors and institutions
+    }
+    class LegalReality {
+        note right: Subset of SocialReality\nincludes legal facts, norms, roles
+    }
+
+    RealWorld <|-- SocialReality
+    SocialReality <|-- LegalReality
+}
+
+package "Core Legal Ontology" {
+    class Fact {
+        stereotype: Occurrent
+        note right: Situations that obtain\nin the real world
+    }
+
+    class LegalFact {
+        stereotype: Occurrent
+        note right: Legally determined\ninstitutional situations
+    }
+
+    class Evidence {
+        stereotype: Generically Dependent Continuant
+        note right: Supports legal claims,\nbased on observation or records
+    }
+
+    class LegalActor {
+        stereotype: Independent Continuant
+        note right: Agent bearing\nlegal roles (e.g., judge)
+    }
+
+    class LegalRole {
+        stereotype: Specifically Dependent Continuant
+        note right: Roles like TrierOfFact,\nPlaintiff, Defendant
+    }
+
+    class DocumentaryAct {
+        stereotype: Occurrent
+        note right: Performative act that\ncreates legal facts
+    }
+
+    class LegalCase {
+        stereotype: Occurrent
+        note right: Legal process involving\nfacts, evidence, outcomes
+    }
+
+    class LegalRule {
+        stereotype: Information Artifact
+        note right: Normative statement\n(e.g., statute)
+    }
+
+    class LegalOutcome {
+        stereotype: Occurrent
+        note right: Result of a legal case\n(e.g., verdict, sanction)
+    }
+
+    class LegalClaim
+    class LegalArgument
+    class LegalEvidence
+
+    LegalReality --> LegalFact
+    LegalFact --> Fact : corresponds_to
+    LegalFact --> LegalRule : applies_to
+    LegalFact <-- LegalActor : determines
+    LegalFact <-- DocumentaryAct : constitutes
+
+    LegalActor --> LegalRole : bears
+    LegalActor --> LegalProcess : participates_in
+    LegalActor --> LegalEvidence : presents
+
+    Evidence --> Fact : is_about
+    Evidence --> LegalClaim : supports
+
+    LegalCase --> LegalActor : involves
+    LegalCase --> LegalFact : has_part
+    LegalCase --> LegalOutcome : produces
+
+    LegalProcess --> LegalOutcome : produces
+
+    LegalClaim --> LegalArgument : supported_by
+    LegalArgument --> LegalEvidence : uses
+
+    LegalFact --> LegalCase : influences
+}
+
+@enduml
