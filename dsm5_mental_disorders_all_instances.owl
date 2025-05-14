@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:md="http://example.org/md#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/md#Specific_Learning_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Neurodevelopmental_Disorders"/>
+    <rdfs:label>Specific Learning Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Presence_of_obsessions_instance">
+    <rdf:type rdf:resource="http://example.org/md#Presence_of_obsessions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#case_post_traumatic_stress_disorder">
+    <rdf:type rdf:resource="http://example.org/md#Post_Traumatic_Stress_Disorder"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Exposure_to_trauma_instance"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Intrusion_symptoms_instance"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Avoidance_instance"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Negative_alterations_cognition_mood_instance"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Arousal_reactivity_instance"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Exposure_to_trauma_instance"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Intrusion_symptoms_instance"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Avoidance_instance"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Negative_alterations_cognition_mood_instance"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Arousal_reactivity_instance"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Personality_Disorders">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#DSM5_Mental_Disorder"/>
+    <rdfs:label>Personality Disorders</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Brief_Psychotic_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Schizophrenia_Spectrum_and_Other_Psychotic_Disorders"/>
+    <rdfs:label>Brief Psychotic Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Time_consuming_or_distress">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Time consuming or distress</rdfs:label>
+    <rdfs:comment>Obsessions or compulsions are time-consuming or cause clinically significant distress.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Gambling_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Substance-Related_and_Addictive_Disorders"/>
+    <rdfs:label>Gambling Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Schizophreniform_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Schizophrenia_Spectrum_and_Other_Psychotic_Disorders"/>
+    <rdfs:label>Schizophreniform Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Schizotypal_Personality_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Personality_Disorders"/>
+    <rdfs:label>Schizotypal Personality Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Excessive_worry">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Excessive worry</rdfs:label>
+    <rdfs:comment>Excessive anxiety and worry more days than not.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Intrusion_symptoms_instance">
+    <rdf:type rdf:resource="http://example.org/md#Intrusion_symptoms"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Substance_Use_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#DSM5_Mental_Disorder"/>
+    <rdfs:label>Substance Use Disorder</rdfs:label>
+    <rdfs:comment>Pattern of symptoms resulting from use of a substance.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Flight_of_ideas_instance">
+    <rdf:type rdf:resource="http://example.org/md#Flight_of_ideas"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#case_obsessive_compulsive_disorder">
+    <rdf:type rdf:resource="http://example.org/md#Obsessive_Compulsive_Disorder"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Presence_of_obsessions_instance"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Presence_of_compulsions_instance"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Time_consuming_or_distress_instance"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Presence_of_obsessions_instance"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Presence_of_compulsions_instance"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Time_consuming_or_distress_instance"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Premenstrual_Dysphoric_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Depressive_Disorders"/>
+    <rdfs:label>Premenstrual Dysphoric Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#case_bipolar_i_disorder">
+    <rdf:type rdf:resource="http://example.org/md#Bipolar_I_Disorder"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Inflated_self_esteem_instance"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Decreased_need_for_sleep_instance"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#More_talkative_than_usual_instance"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Flight_of_ideas_instance"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Increase_in_goal_directed_activity_instance"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Inflated_self_esteem_instance"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Decreased_need_for_sleep_instance"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#More_talkative_than_usual_instance"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Flight_of_ideas_instance"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Increase_in_goal_directed_activity_instance"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Alcohol_Use_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Substance-Related_and_Addictive_Disorders"/>
+    <rdfs:label>Alcohol Use Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Bulimia_Nervosa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Feeding_and_Eating_Disorders"/>
+    <rdfs:label>Bulimia Nervosa</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Major_Depressive_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#DSM5_Mental_Disorder"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Depressive_Disorders"/>
+    <rdfs:label>Major Depressive Disorder</rdfs:label>
+    <rdfs:comment>Characterized by persistent depressed mood or loss of interest.</rdfs:comment>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Depressed_mood"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Loss_of_interest"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Weight_change"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Insomnia_or_hypersomnia"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Fatigue"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Depressed_mood"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Loss_of_interest"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Weight_change"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Insomnia_or_hypersomnia"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Fatigue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Social_Anxiety_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Anxiety_Disorders"/>
+    <rdfs:label>Social Anxiety Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Depressed_mood">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Depressed mood</rdfs:label>
+    <rdfs:comment>Persistent feeling of sadness or emptiness.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Weight_change">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Weight change</rdfs:label>
+    <rdfs:comment>Significant weight loss or gain.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Obsessive_Compulsive_Disorder">
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Presence_of_obsessions"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Presence_of_compulsions"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Time_consuming_or_distress"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Presence_of_obsessions"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Presence_of_compulsions"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Time_consuming_or_distress"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Tic_Disorders">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Neurodevelopmental_Disorders"/>
+    <rdfs:label>Tic Disorders</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Depressive_Disorders">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#DSM5_Mental_Disorder"/>
+    <rdfs:label>Depressive Disorders</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Narcissistic_Personality_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Personality_Disorders"/>
+    <rdfs:label>Narcissistic Personality Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#case_autism_spectrum_disorder">
+    <rdf:type rdf:resource="http://example.org/md#Autism_Spectrum_Disorder"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Persistent_deficits_social_communication_instance"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Restricted_repetitive_patterns_instance"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Symptoms_present_early_instance"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Clinically_significant_impairment_instance"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Persistent_deficits_social_communication_instance"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Restricted_repetitive_patterns_instance"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Symptoms_present_early_instance"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Clinically_significant_impairment_instance"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Increase_in_goal_directed_activity_instance">
+    <rdf:type rdf:resource="http://example.org/md#Increase_in_goal_directed_activity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Feeding_and_Eating_Disorders">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#DSM5_Mental_Disorder"/>
+    <rdfs:label>Feeding and Eating Disorders</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Communication_Disorders">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Neurodevelopmental_Disorders"/>
+    <rdfs:label>Communication Disorders</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Flight_of_ideas">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Flight of ideas</rdfs:label>
+    <rdfs:comment>Flight of ideas or subjective experience that thoughts are racing.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#hasSymptom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>has symptom</rdfs:label>
+    <rdfs:comment>Relates a disorder to a symptom</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Avoidant_Restrictive_Food_Intake_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Feeding_and_Eating_Disorders"/>
+    <rdfs:label>Avoidant/Restrictive Food Intake Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#case_schizophrenia">
+    <rdf:type rdf:resource="http://example.org/md#Schizophrenia"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Delusions_instance"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Hallucinations_instance"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Disorganized_speech_instance"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Grossly_disorganized_or_catatonic_behavior_instance"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Negative_symptoms_instance"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Delusions_instance"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Hallucinations_instance"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Disorganized_speech_instance"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Grossly_disorganized_or_catatonic_behavior_instance"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Negative_symptoms_instance"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Obsessive-Compulsive_and_Related_Disorders">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#DSM5_Mental_Disorder"/>
+    <rdfs:label>Obsessive-Compulsive and Related Disorders</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Stimulant_Use_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Substance-Related_and_Addictive_Disorders"/>
+    <rdfs:label>Stimulant Use Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Clinically_significant_impairment_instance">
+    <rdf:type rdf:resource="http://example.org/md#Clinically_significant_impairment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Schizophrenia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#DSM5_Mental_Disorder"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Schizophrenia_Spectrum_and_Other_Psychotic_Disorders"/>
+    <rdfs:label>Schizophrenia</rdfs:label>
+    <rdfs:comment>Includes delusions, hallucinations, disorganized speech.</rdfs:comment>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Delusions"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Hallucinations"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Disorganized_speech"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Grossly_disorganized_or_catatonic_behavior"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Negative_symptoms"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Delusions"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Hallucinations"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Disorganized_speech"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Grossly_disorganized_or_catatonic_behavior"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Negative_symptoms"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Trichotillomania_Hair-Pulling_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Obsessive-Compulsive_and_Related_Disorders"/>
+    <rdfs:label>Trichotillomania (Hair-Pulling Disorder)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Obsessive-Compulsive_Personality_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Personality_Disorders"/>
+    <rdfs:label>Obsessive-Compulsive Personality Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Autism_Spectrum_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#DSM5_Mental_Disorder"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Neurodevelopmental_Disorders"/>
+    <rdfs:label>Autism Spectrum Disorder</rdfs:label>
+    <rdfs:comment>Characterized by persistent deficits in social communication and restricted patterns of behavior.</rdfs:comment>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Persistent_deficits_social_communication"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Restricted_repetitive_patterns"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Symptoms_present_early"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Clinically_significant_impairment"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Persistent_deficits_social_communication"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Restricted_repetitive_patterns"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Symptoms_present_early"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Clinically_significant_impairment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Negative_symptoms">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Negative symptoms</rdfs:label>
+    <rdfs:comment>Diminished emotional expression or avolition.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Presence_of_compulsions_instance">
+    <rdf:type rdf:resource="http://example.org/md#Presence_of_compulsions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#More_talkative_than_usual">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>More talkative than usual</rdfs:label>
+    <rdfs:comment>More talkative than usual or pressure to keep talking.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Post-Traumatic_Stress_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#DSM5_Mental_Disorder"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Trauma-_and_Stressor-Related_Disorders"/>
+    <rdfs:label>Post-Traumatic Stress Disorder</rdfs:label>
+    <rdfs:comment>Triggered by experiencing or witnessing a traumatic event.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Generalized_Anxiety_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#DSM5_Mental_Disorder"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Anxiety_Disorders"/>
+    <rdfs:label>Generalized Anxiety Disorder</rdfs:label>
+    <rdfs:comment>Marked by excessive anxiety and worry occurring more days than not.</rdfs:comment>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Excessive_worry"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Restlessness"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Easily_fatigued"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Irritability"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Sleep_disturbance"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Excessive_worry"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Restlessness"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Easily_fatigued"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Irritability"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Sleep_disturbance"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Hoarding_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Obsessive-Compulsive_and_Related_Disorders"/>
+    <rdfs:label>Hoarding Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Schizoid_Personality_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Personality_Disorders"/>
+    <rdfs:label>Schizoid Personality Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Borderline_Personality_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Personality_Disorders"/>
+    <rdfs:label>Borderline Personality Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Bipolar_I_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#DSM5_Mental_Disorder"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Bipolar_and_Related_Disorders"/>
+    <rdfs:label>Bipolar I Disorder</rdfs:label>
+    <rdfs:comment>Defined by manic episodes lasting at least 7 days.</rdfs:comment>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Inflated_self_esteem"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Decreased_need_for_sleep"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#More_talkative_than_usual"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Flight_of_ideas"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Increase_in_goal_directed_activity"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Inflated_self_esteem"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Decreased_need_for_sleep"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#More_talkative_than_usual"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Flight_of_ideas"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Increase_in_goal_directed_activity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Schizoaffective_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Schizophrenia_Spectrum_and_Other_Psychotic_Disorders"/>
+    <rdfs:label>Schizoaffective Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Paranoid_Personality_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Personality_Disorders"/>
+    <rdfs:label>Paranoid Personality Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Specific_Phobia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Anxiety_Disorders"/>
+    <rdfs:label>Specific Phobia</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Decreased_need_for_sleep_instance">
+    <rdf:type rdf:resource="http://example.org/md#Decreased_need_for_sleep"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Avoidant_Personality_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Personality_Disorders"/>
+    <rdfs:label>Avoidant Personality Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#DSM5_Mental_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disposition"/>
+    <rdfs:label>DSM-5 Mental Disorder</rdfs:label>
+    <rdfs:comment>A mental disorder as defined by the DSM-5-TR.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Delirium">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Neurocognitive_Disorders"/>
+    <rdfs:label>Delirium</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Negative_alterations_cognition_mood">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Negative alterations cognition mood</rdfs:label>
+    <rdfs:comment>Inability to remember aspects of the trauma, exaggerated negative beliefs.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Excoriation_Skin-Picking_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Obsessive-Compulsive_and_Related_Disorders"/>
+    <rdfs:label>Excoriation (Skin-Picking) Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Insomnia_or_hypersomnia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Insomnia or hypersomnia</rdfs:label>
+    <rdfs:comment>Disrupted sleep patterns.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Obsessive-Compulsive_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#DSM5_Mental_Disorder"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Obsessive-Compulsive_and_Related_Disorders"/>
+    <rdfs:label>Obsessive-Compulsive Disorder</rdfs:label>
+    <rdfs:comment>Recurrent and persistent thoughts and repetitive behaviors.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Symptoms_present_early_instance">
+    <rdf:type rdf:resource="http://example.org/md#Symptoms_present_early"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Persistent_deficits_social_communication">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Persistent deficits social communication</rdfs:label>
+    <rdfs:comment>Persistent deficits in social communication and social interaction across multiple contexts.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Easily_fatigued">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Easily fatigued</rdfs:label>
+    <rdfs:comment>Getting tired easily.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Post_Traumatic_Stress_Disorder">
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Exposure_to_trauma"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Intrusion_symptoms"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Avoidance"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Negative_alterations_cognition_mood"/>
+    <md:hasDiagnosticCriterion rdf:resource="http://example.org/md#Arousal_reactivity"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Exposure_to_trauma"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Intrusion_symptoms"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Avoidance"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Negative_alterations_cognition_mood"/>
+    <md:hasSymptom rdf:resource="http://example.org/md#Arousal_reactivity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Cyclothymic_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Bipolar_and_Related_Disorders"/>
+    <rdfs:label>Cyclothymic Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Arousal_reactivity_instance">
+    <rdf:type rdf:resource="http://example.org/md#Arousal_reactivity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Arousal_reactivity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Arousal reactivity</rdfs:label>
+    <rdfs:comment>Irritable behavior, hypervigilance, exaggerated startle response.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Decreased_need_for_sleep">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Decreased need for sleep</rdfs:label>
+    <rdfs:comment>Decreased need for sleep.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Negative_symptoms_instance">
+    <rdf:type rdf:resource="http://example.org/md#Negative_symptoms"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Schizophrenia_Spectrum_and_Other_Psychotic_Disorders">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#DSM5_Mental_Disorder"/>
+    <rdfs:label>Schizophrenia Spectrum and Other Psychotic Disorders</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Hallucinations_instance">
+    <rdf:type rdf:resource="http://example.org/md#Hallucinations"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Opioid_Use_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Substance-Related_and_Addictive_Disorders"/>
+    <rdfs:label>Opioid Use Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Persistent_Depressive_Disorder_Dysthymia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Depressive_Disorders"/>
+    <rdfs:label>Persistent Depressive Disorder (Dysthymia)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Intellectual_Disability">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Neurodevelopmental_Disorders"/>
+    <rdfs:label>Intellectual Disability</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Disorganized_speech_instance">
+    <rdf:type rdf:resource="http://example.org/md#Disorganized_speech"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Delusional_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Schizophrenia_Spectrum_and_Other_Psychotic_Disorders"/>
+    <rdfs:label>Delusional Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Exposure_to_trauma">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Exposure to trauma</rdfs:label>
+    <rdfs:comment>Exposure to actual or threatened death, serious injury, or sexual violence.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Disruptive_Mood_Dysregulation_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Depressive_Disorders"/>
+    <rdfs:label>Disruptive Mood Dysregulation Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Substance-Related_and_Addictive_Disorders">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#DSM5_Mental_Disorder"/>
+    <rdfs:label>Substance-Related and Addictive Disorders</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Anorexia_Nervosa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#DSM5_Mental_Disorder"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Feeding_and_Eating_Disorders"/>
+    <rdfs:label>Anorexia Nervosa</rdfs:label>
+    <rdfs:comment>Characterized by restriction of energy intake relative to requirements.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Hallucinations">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Hallucinations</rdfs:label>
+    <rdfs:comment>Perception-like experiences that occur without an external stimulus.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Attention-Deficit_Hyperactivity_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Neurodevelopmental_Disorders"/>
+    <rdfs:label>Attention-Deficit/Hyperactivity Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Symptoms_present_early">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Symptoms present early</rdfs:label>
+    <rdfs:comment>Symptoms must be present in the early developmental period.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Panic_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Anxiety_Disorders"/>
+    <rdfs:label>Panic Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Grossly_disorganized_or_catatonic_behavior">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Grossly disorganized or catatonic behavior</rdfs:label>
+    <rdfs:comment>Markedly disorganized or abnormal motor behavior.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Delusions">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Delusions</rdfs:label>
+    <rdfs:comment>Fixed beliefs that are not amenable to change in light of conflicting evidence.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Major_Neurocognitive_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Neurocognitive_Disorders"/>
+    <rdfs:label>Major Neurocognitive Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Antisocial_Personality_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Personality_Disorders"/>
+    <rdfs:label>Antisocial Personality Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Adjustment_Disorders">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Trauma-_and_Stressor-Related_Disorders"/>
+    <rdfs:label>Adjustment Disorders</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Anxiety_Disorders">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#DSM5_Mental_Disorder"/>
+    <rdfs:label>Anxiety Disorders</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Clinically_significant_impairment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Clinically significant impairment</rdfs:label>
+    <rdfs:comment>Symptoms cause clinically significant impairment in social, occupational, or other important areas of functioning.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Acute_Stress_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Trauma-_and_Stressor-Related_Disorders"/>
+    <rdfs:label>Acute Stress Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Bipolar_and_Related_Disorders">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#DSM5_Mental_Disorder"/>
+    <rdfs:label>Bipolar and Related Disorders</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Agoraphobia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Anxiety_Disorders"/>
+    <rdfs:label>Agoraphobia</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Mild_Neurocognitive_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Neurocognitive_Disorders"/>
+    <rdfs:label>Mild Neurocognitive Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Increase_in_goal_directed_activity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Increase in goal directed activity</rdfs:label>
+    <rdfs:comment>Increase in goal-directed activity or psychomotor agitation.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Disorganized_speech">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Disorganized speech</rdfs:label>
+    <rdfs:comment>Frequent derailment or incoherence.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Reactive_Attachment_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Trauma-_and_Stressor-Related_Disorders"/>
+    <rdfs:label>Reactive Attachment Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Intrusion_symptoms">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Intrusion symptoms</rdfs:label>
+    <rdfs:comment>Recurrent, involuntary, and intrusive distressing memories.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Attention-Deficit/Hyperactivity_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#DSM5_Mental_Disorder"/>
+    <rdfs:label>Attention-Deficit/Hyperactivity Disorder</rdfs:label>
+    <rdfs:comment>Marked by an ongoing pattern of inattention and/or hyperactivity.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Binge-Eating_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Feeding_and_Eating_Disorders"/>
+    <rdfs:label>Binge-Eating Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Cannabis_Use_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Substance-Related_and_Addictive_Disorders"/>
+    <rdfs:label>Cannabis Use Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Avoidance">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Avoidance</rdfs:label>
+    <rdfs:comment>Persistent avoidance of stimuli associated with the traumatic event.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Irritability">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Irritability</rdfs:label>
+    <rdfs:comment>Being irritable or moody.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Restricted_repetitive_patterns_instance">
+    <rdf:type rdf:resource="http://example.org/md#Restricted_repetitive_patterns"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Delusions_instance">
+    <rdf:type rdf:resource="http://example.org/md#Delusions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Sleep_disturbance">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Sleep disturbance</rdfs:label>
+    <rdfs:comment>Difficulty falling or staying asleep.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Restlessness">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Restlessness</rdfs:label>
+    <rdfs:comment>Feeling keyed up or on edge.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Fatigue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Fatigue</rdfs:label>
+    <rdfs:comment>Loss of energy nearly every day.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Presence_of_obsessions">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Presence of obsessions</rdfs:label>
+    <rdfs:comment>Recurrent and persistent thoughts, urges, or images.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Inflated_self_esteem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Inflated self esteem</rdfs:label>
+    <rdfs:comment>Inflated self-esteem or grandiosity.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Exposure_to_trauma_instance">
+    <rdf:type rdf:resource="http://example.org/md#Exposure_to_trauma"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Motor_Disorders">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Neurodevelopmental_Disorders"/>
+    <rdfs:label>Motor Disorders</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Loss_of_interest">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Loss of interest</rdfs:label>
+    <rdfs:comment>Markedly diminished interest or pleasure in all activities.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Body_Dysmorphic_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Obsessive-Compulsive_and_Related_Disorders"/>
+    <rdfs:label>Body Dysmorphic Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#hasDiagnosticCriterion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>has diagnostic criterion</rdfs:label>
+    <rdfs:comment>Relates a disorder to its diagnostic criteria</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Neurocognitive_Disorders">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#DSM5_Mental_Disorder"/>
+    <rdfs:label>Neurocognitive Disorders</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Presence_of_compulsions">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Presence of compulsions</rdfs:label>
+    <rdfs:comment>Repetitive behaviors or mental acts.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Neurodevelopmental_Disorders">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#DSM5_Mental_Disorder"/>
+    <rdfs:label>Neurodevelopmental Disorders</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Bipolar_II_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#Bipolar_and_Related_Disorders"/>
+    <rdfs:label>Bipolar II Disorder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Inflated_self_esteem_instance">
+    <rdf:type rdf:resource="http://example.org/md#Inflated_self_esteem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Restricted_repetitive_patterns">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Restricted repetitive patterns</rdfs:label>
+    <rdfs:comment>Restricted, repetitive patterns of behavior, interests, or activities.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Trauma-_and_Stressor-Related_Disorders">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/md#DSM5_Mental_Disorder"/>
+    <rdfs:label>Trauma- and Stressor-Related Disorders</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Negative_alterations_cognition_mood_instance">
+    <rdf:type rdf:resource="http://example.org/md#Negative_alterations_cognition_mood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Time_consuming_or_distress_instance">
+    <rdf:type rdf:resource="http://example.org/md#Time_consuming_or_distress"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#More_talkative_than_usual_instance">
+    <rdf:type rdf:resource="http://example.org/md#More_talkative_than_usual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Avoidance_instance">
+    <rdf:type rdf:resource="http://example.org/md#Avoidance"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Grossly_disorganized_or_catatonic_behavior_instance">
+    <rdf:type rdf:resource="http://example.org/md#Grossly_disorganized_or_catatonic_behavior"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/md#Persistent_deficits_social_communication_instance">
+    <rdf:type rdf:resource="http://example.org/md#Persistent_deficits_social_communication"/>
+  </rdf:Description>
+</rdf:RDF>

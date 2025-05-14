@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:recon="http://example.org/recon#"
+>
+  <rdf:Description rdf:about="http://example.org/recon#Schizophrenia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Schizophrenia</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Psychotic_Disposition"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Schizophrenia_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Autism_Spectrum_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Autism Spectrum Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Autism_Spectrum_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Schizoaffective_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Schizoaffective Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Reactive_Attachment_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Reactive Attachment Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Reactive_Attachment_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Binge-Eating_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Binge-Eating Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Binge-Eating_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Generalized_Anxiety_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Generalized Anxiety Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Generalized_Anxiety_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Post-Traumatic_Stress_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Post-Traumatic Stress Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Post-Traumatic_Stress_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#OCD">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>OCD</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Obsessive-Compulsive_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Communication_Disorders">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Communication Disorders</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Communication_Disorders_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Cannabis_Use_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Cannabis Use Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Cannabis_Use_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Panic_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Panic Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Panic_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Post-Traumatic_Stress_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Post-Traumatic Stress Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Post-Traumatic_Stress_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Premenstrual_Dysphoric_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Premenstrual Dysphoric Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Premenstrual_Dysphoric_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Adjustment_Disorders">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Adjustment Disorders</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Adjustment_Disorders_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Schizophreniform_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Schizophreniform Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Schizophreniform_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Excoriation_Skin-Picking_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Excoriation (Skin-Picking) Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Obsessive-Compulsive_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Obsessive-Compulsive Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Obsessive-Compulsive_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Narcissistic_Personality_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Narcissistic Personality Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Antisocial_Personality_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Antisocial Personality Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Antisocial_Personality_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Cyclothymic_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Cyclothymic Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Cyclothymic_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Psychotic_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Psychotic Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Psychotic_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Binge-Eating_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Binge-Eating Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Binge-Eating_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Panic_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Panic Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Panic_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Persistent_Depressive_Disorder_Dysthymia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Persistent Depressive Disorder (Dysthymia)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Persistent_Depressive_Disorder_Dysthymia_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Persistent_Depressive_Disorder_Dysthymia_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Persistent Depressive Disorder (Dysthymia) Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Bulimia_Nervosa_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Bulimia Nervosa Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Bulimia_Nervosa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Bulimia Nervosa</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Bulimia_Nervosa_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Narcissistic_Personality_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Narcissistic Personality Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Narcissistic_Personality_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Agoraphobia_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Agoraphobia Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Cannabis_Use_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Cannabis Use Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Cannabis_Use_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Obsessive-Compulsive_Personality_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Obsessive-Compulsive Personality Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Obsessive-Compulsive_Personality_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Obsessive-Compulsive_Personality_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Obsessive-Compulsive Personality Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Obsessive-Compulsive_Personality_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Cyclothymic_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Cyclothymic Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Cyclothymic_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Avoidant_Restrictive_Food_Intake_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Avoidant/Restrictive Food Intake Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Avoidant_Restrictive_Food_Intake_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Mild_Neurocognitive_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Mild Neurocognitive Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Mild_Neurocognitive_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Anxiety_Episode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Anxiety Episode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Obsessive-Compulsive_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Obsessive-Compulsive Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Trauma-related_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Trauma-related Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Reexperiencing_Episode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Major_Depressive_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Major Depressive Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Excoriation_Skin-Picking_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Excoriation (Skin-Picking) Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Excoriation_Skin-Picking_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Psychotic_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Psychotic Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Cyclothymic_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Cyclothymic Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Anorexia_Nervosa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Anorexia Nervosa</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Anorexia_Nervosa_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Compulsion_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Compulsion Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Borderline_Personality_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Borderline Personality Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Borderline_Personality_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Stimulant_Use_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Stimulant Use Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Schizotypal_Personality_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Schizotypal Personality Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Alcohol_Use_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Alcohol Use Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Alcohol_Use_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Intellectual_Disability_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Intellectual Disability Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Opioid_Use_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Opioid Use Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Opioid_Use_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Alcohol_Use_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Alcohol Use Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Alcohol_Use_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Disruptive_Mood_Dysregulation_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Disruptive Mood Dysregulation Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Disruptive_Mood_Dysregulation_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Body_Dysmorphic_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Body Dysmorphic Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Trichotillomania_Hair-Pulling_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Trichotillomania (Hair-Pulling Disorder)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Trichotillomania_Hair-Pulling_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Disruptive_Mood_Dysregulation_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Disruptive Mood Dysregulation Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Disruptive_Mood_Dysregulation_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Body_Dysmorphic_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Body Dysmorphic Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Body_Dysmorphic_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Brief_Psychotic_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Brief Psychotic Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Brief_Psychotic_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Premenstrual_Dysphoric_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Premenstrual Dysphoric Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Premenstrual_Dysphoric_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Hoarding_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Hoarding Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Hoarding_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Stimulant_Use_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Stimulant Use Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Stimulant_Use_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Schizotypal_Personality_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Schizotypal Personality Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Schizotypal_Personality_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Persistent_Depressive_Disorder_Dysthymia_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Persistent Depressive Disorder (Dysthymia) Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Persistent_Depressive_Disorder_Dysthymia_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Delusional_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Delusional Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Delusional_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Generalized_Anxiety_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Generalized Anxiety Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Attention-Deficit_Hyperactivity_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Attention-Deficit/Hyperactivity Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Attention-Deficit_Hyperactivity_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Schizophreniform_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Schizophreniform Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Schizophreniform_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Bulimia_Nervosa_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Bulimia Nervosa Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Bulimia_Nervosa_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Antisocial_Personality_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Antisocial Personality Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Antisocial_Personality_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Avoidant_Personality_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Avoidant Personality Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Avoidant_Personality_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Intellectual_Disability_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Intellectual Disability Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Intellectual_Disability_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Reexperiencing_Episode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Reexperiencing Episode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Major_Neurocognitive_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Major Neurocognitive Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Acute_Stress_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Acute Stress Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Acute_Stress_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Specific_Learning_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Specific Learning Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Specific_Phobia_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Specific Phobia Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Specific_Phobia_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Avoidant_Personality_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Avoidant Personality Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Avoidant_Personality_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Attention-Deficit_Hyperactivity_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Attention-Deficit/Hyperactivity Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Schizophreniform_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Schizophreniform Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Mild_Neurocognitive_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Mild Neurocognitive Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Anorexia_Nervosa_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Anorexia Nervosa Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Anorexia_Nervosa_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Body_Dysmorphic_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Body Dysmorphic Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Body_Dysmorphic_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Schizotypal_Personality_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Schizotypal Personality Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Schizotypal_Personality_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Anxious_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Anxious Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Anxiety_Episode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Delusional_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Delusional Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Tic_Disorders_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Tic Disorders Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Tic_Disorders_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Obsessive-Compulsive_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Obsessive-Compulsive Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Obsessive-Compulsive_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Tic_Disorders_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Tic Disorders Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Bipolar_II_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Bipolar II Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Bipolar_II_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Specific_Phobia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Specific Phobia</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Specific_Phobia_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Schizophrenia_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Schizophrenia Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Trichotillomania_Hair-Pulling_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Trichotillomania (Hair-Pulling Disorder) Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Trichotillomania_Hair-Pulling_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Gambling_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Gambling Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Gambling_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Schizophrenia_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Schizophrenia Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Schizophrenia_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Major_Depressive_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Major Depressive Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Major_Depressive_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Post-Traumatic_Stress_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Post-Traumatic Stress Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Excoriation_Skin-Picking_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Excoriation (Skin-Picking) Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Excoriation_Skin-Picking_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Attention-Deficit_Hyperactivity_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Attention-Deficit/Hyperactivity Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Attention-Deficit_Hyperactivity_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Binge-Eating_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Binge-Eating Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Anorexia_Nervosa_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Anorexia Nervosa Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Panic_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Panic Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Autism_Spectrum_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Autism Spectrum Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Stimulant_Use_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Stimulant Use Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Stimulant_Use_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Depressive_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Depressive Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Depressive_Episode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Avoidant_Restrictive_Food_Intake_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Avoidant/Restrictive Food Intake Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Mild_Neurocognitive_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Mild Neurocognitive Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Mild_Neurocognitive_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Opioid_Use_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Opioid Use Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Opioid_Use_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Acute_Stress_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Acute Stress Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Acute_Stress_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Avoidant_Restrictive_Food_Intake_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Avoidant/Restrictive Food Intake Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Avoidant_Restrictive_Food_Intake_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Delirium">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Delirium</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Delirium_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Schizoid_Personality_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Schizoid Personality Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Schizoid_Personality_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#hasDisposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>has disposition</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#realizedIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>realized in</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Delirium_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Delirium Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Autism_Spectrum_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Autism Spectrum Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Autism_Spectrum_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Social_Anxiety_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Social Anxiety Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Social_Anxiety_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Premenstrual_Dysphoric_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Premenstrual Dysphoric Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Generalized_Anxiety_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Generalized Anxiety Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Anxious_Disposition"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Generalized_Anxiety_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Gambling_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Gambling Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Gambling_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Delirium_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Delirium Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Delirium_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Delusional_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Delusional Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Delusional_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Antisocial_Personality_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Antisocial Personality Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Gambling_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Gambling Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Agoraphobia_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Agoraphobia Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Agoraphobia_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Hoarding_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Hoarding Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Intellectual_Disability">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Intellectual Disability</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Intellectual_Disability_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Paranoid_Personality_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Paranoid Personality Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Communication_Disorders_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Communication Disorders Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Motor_Disorders">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Motor Disorders</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Motor_Disorders_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Major_Depressive_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Major Depressive Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Depressive_Disposition"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Major_Depressive_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Adjustment_Disorders_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Adjustment Disorders Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Schizoaffective_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Schizoaffective Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Schizoaffective_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Schizoid_Personality_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Schizoid Personality Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Schizoid_Personality_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Obsessive-Compulsive_Personality_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Obsessive-Compulsive Personality Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Adjustment_Disorders_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Adjustment Disorders Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Adjustment_Disorders_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Motor_Disorders_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Motor Disorders Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Motor_Disorders_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Tic_Disorders">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Tic Disorders</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Tic_Disorders_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Cannabis_Use_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Cannabis Use Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Reactive_Attachment_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Reactive Attachment Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Paranoid_Personality_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Paranoid Personality Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Paranoid_Personality_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Social_Anxiety_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Social Anxiety Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Social_Anxiety_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Bipolar_II_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Bipolar II Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Bipolar_II_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Bipolar II Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Bipolar_II_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Acute_Stress_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Acute Stress Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Alcohol_Use_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Alcohol Use Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Borderline_Personality_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Borderline Personality Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Borderline_Personality_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Narcissistic_Personality_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Narcissistic Personality Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Narcissistic_Personality_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Brief_Psychotic_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Brief Psychotic Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Avoidant_Personality_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Avoidant Personality Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Specific_Phobia_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Specific Phobia Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Reactive_Attachment_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Reactive Attachment Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Reactive_Attachment_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Schizoaffective_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Schizoaffective Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Schizoaffective_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Bipolar_I_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Bipolar I Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Hoarding_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Hoarding Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Hoarding_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Brief_Psychotic_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Brief Psychotic Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Brief_Psychotic_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Schizoid_Personality_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Schizoid Personality Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Major_Neurocognitive_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Major Neurocognitive Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Major_Neurocognitive_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Borderline_Personality_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Borderline Personality Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Motor_Disorders_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Motor Disorders Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Obsessive-Compulsive_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Obsessive-Compulsive Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Compulsion_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Major_Neurocognitive_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Major Neurocognitive Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Major_Neurocognitive_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#PTSD">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>PTSD</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Trauma-related_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Depressive_Episode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Depressive Episode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Communication_Disorders_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Communication Disorders Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Communication_Disorders_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Opioid_Use_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Opioid Use Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Disruptive_Mood_Dysregulation_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Disruptive Mood Dysregulation Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Specific_Learning_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Specific Learning Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Specific_Learning_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Bipolar_I_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Bipolar I Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Bipolar_I_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Social_Anxiety_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Social Anxiety Disorder Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Trichotillomania_Hair-Pulling_Disorder_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Trichotillomania (Hair-Pulling Disorder) Process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Agoraphobia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Agoraphobia</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Agoraphobia_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Bipolar_I_Disorder_Disposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Bipolar I Disorder Disposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <recon:realizedIn rdf:resource="http://example.org/recon#Bipolar_I_Disorder_Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Paranoid_Personality_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Paranoid Personality Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Paranoid_Personality_Disorder_Disposition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/recon#Specific_Learning_Disorder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Specific Learning Disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_Disease"/>
+    <recon:hasDisposition rdf:resource="http://example.org/recon#Specific_Learning_Disorder_Disposition"/>
+  </rdf:Description>
+</rdf:RDF>
