@@ -1,0 +1,93 @@
+@prefix : <http://example.org/relational-field#> .
+@prefix bfo: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://example.org/relational-field>
+    rdf:type owl:Ontology .
+
+### Classes
+:Self rdf:type owl:Class ;
+    rdfs:subClassOf bfo:BFO_0000020 .   # Specifically Dependent Continuant
+
+:Obligation rdf:type owl:Class ;
+    rdfs:subClassOf bfo:BFO_0000020 .
+
+:Denial rdf:type owl:Class ;
+    rdfs:subClassOf bfo:BFO_0000015 .   # Process (or use Disposition if you prefer)
+
+:Directedness rdf:type owl:Class ;
+    rdfs:subClassOf bfo:BFO_0000020 .
+
+:Recognition rdf:type owl:Class ;
+    rdfs:subClassOf bfo:BFO_0000020 .
+
+:Addressability rdf:type owl:Class ;
+    rdfs:subClassOf bfo:BFO_0000020 .
+
+:NarrativeIdentity rdf:type owl:Class ;
+    rdfs:subClassOf bfo:BFO_0000020 .
+
+:Role rdf:type owl:Class ;
+    rdfs:subClassOf bfo:BFO_0000023 .  # BFO Role
+
+:RelationalField rdf:type owl:Class ;
+    rdfs:subClassOf bfo:BFO_0000027 .  # Object Aggregate
+
+### Object Properties
+:collapsesCoherenceOf rdf:type owl:ObjectProperty ;
+    rdfs:domain :Denial ;
+    rdfs:range :Self .
+
+:attemptsToNegate rdf:type owl:ObjectProperty ;
+    rdfs:domain :Denial ;
+    rdfs:range :Obligation .
+
+:embodies rdf:type owl:ObjectProperty ;
+    rdfs:domain :Obligation ;
+    rdfs:range :Self .
+
+:dependsOn rdf:type owl:ObjectProperty ;
+    rdfs:domain :Obligation ;
+    rdfs:range :Directedness .
+
+:structurallyEntails rdf:type owl:ObjectProperty ;
+    rdfs:domain :Directedness ;
+    rdfs:range :Recognition .
+
+:ethicallyActivates rdf:type owl:ObjectProperty ;
+    rdfs:domain :Recognition ;
+    rdfs:range :Obligation .
+
+:enables rdf:type owl:ObjectProperty ;
+    rdfs:domain :Addressability ;
+    rdfs:range :Obligation .
+
+:stabilizes rdf:type owl:ObjectProperty ;
+    rdfs:domain :NarrativeIdentity ;
+    rdfs:range :Obligation .
+
+:carries rdf:type owl:ObjectProperty ;
+    rdfs:domain :Role ;
+    rdfs:range :Obligation .
+
+:requires rdf:type owl:ObjectProperty ;
+    rdfs:domain :Obligation ;
+    rdfs:range :Self .
+
+:emergesThrough rdf:type owl:ObjectProperty ;
+    rdfs:domain :Self ;
+    rdfs:range :Obligation .
+
+:inhabits rdf:type owl:ObjectProperty ;
+    rdfs:domain :Self ;
+    rdfs:range :Role .
+
+:constitutes rdf:type owl:ObjectProperty ;
+    rdfs:domain :Obligation ;
+    rdfs:range :Self .
+
+### Annotations (as rdfs:comment)
+:Denial rdfs:comment "Stereotype: Contradiction. Denial of obligation undermines the conditions of selfhood. Result: ontological incoherence." .
+:Obligation rdfs:comment "Stereotype: Specifically Dependent Continuant." .
